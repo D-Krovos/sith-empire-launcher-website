@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#120b0d">
+  <meta name="description" content="Download The Sith Empire launcher for Jedi Academy. Update JoF EternalJK, manage PK3s, and launch your game from one place.">
+  <title>{{S}} Launcher — The Sith Empire</title>
+  <style>
+    @font-face { font-family: Cinzel; src: url("assets/cinzel.ttf") format("truetype"); font-display: swap; }
+    :root { color-scheme: dark; font-family: Arial, sans-serif; color: #f6edef; background: #120b0d; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-width: 320px; background: #120b0d url("assets/sith-background.png") center top / 100% auto no-repeat; }
+    body::before { position: fixed; inset: 0; z-index: -1; content: ""; background: linear-gradient(#10090bd9 0 0); }
+    a { color: inherit; }
+    a:focus-visible { outline: 3px solid #ffb0ba; outline-offset: 4px; }
+    .page { width: min(920px, calc(100% - 32px)); margin: 0 auto; }
+    header { height: 84px; display: flex; align-items: center; justify-content: center; border-bottom: 1px solid #f7c6ce33; }
+    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+    .brand img { width: 43px; height: 43px; }
+    .brand span { font: 17px Cinzel, Georgia, serif; letter-spacing: 1.4px; }
+    .brand small { display: block; margin-top: 5px; text-align: center; color: #c7abb1; font: 9px Arial, sans-serif; letter-spacing: 2.2px; }
+    main { text-align: center; padding: 38px 0 55px; }
+    h1 { margin: 0 0 8px; font: 500 clamp(30px, 6vw, 48px) Cinzel, Georgia, serif; letter-spacing: 1px; }
+    .subtitle { margin: 0 0 23px; color: #d6c4c8; font-size: 15px; line-height: 1.7; }
+    .screen { display: block; width: 100%; padding: 7px; border: 1px solid #ae4155; border-radius: 4px; background: #130d10; box-shadow: 0 0 35px #ad22352c; }
+    .screen img { display: block; width: 100%; height: auto; }
+    .download { display: inline-flex; min-height: 52px; align-items: center; justify-content: center; margin: 25px 0 12px; padding: 0 30px; border: 1px solid #ff9baa; border-radius: 3px; background: linear-gradient(#d42c48, #8d142d); box-shadow: 0 0 24px #ed344350; color: #fff; font-size: 14px; font-weight: 700; letter-spacing: 1.2px; text-decoration: none; text-transform: uppercase; transition: filter .18s, box-shadow .18s; }
+    .download:hover { filter: brightness(1.18); box-shadow: 0 0 32px #ed34438a; }
+    .version { margin: 0 0 28px; color: #bba9ae; font-size: 11px; }
+    .details { max-width: 700px; margin: 0 auto; padding: 21px 23px; border-top: 1px solid #c9586b75; border-bottom: 1px solid #c9586b75; background: #10090bc2; text-align: left; }
+    .details h2 { margin: 0 0 9px; font: 20px Cinzel, Georgia, serif; text-align: center; }
+    .details p { margin: 0; color: #d0c1c5; font-size: 13px; line-height: 1.75; }
+    .more { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px 24px; margin: 19px 0 0; color: #e5cbd0; font-size: 12px; }
+    .more a { text-decoration-color: #ce536a; text-underline-offset: 4px; }
+    .screenshot-caption { margin: 8px 0 0; color: #bba9ae; font-size: 10px; }
+    footer { padding: 16px 0 23px; color: #aa969c; font-size: 10px; text-align: center; }
+    footer a { color: #dfcbd0; }
+    @media (max-width: 560px) { header { height: 72px; } main { padding-top: 27px; } .subtitle { font-size: 13px; } .screen { padding: 4px; } .details { padding: 18px 15px; } }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition-duration: .01ms !important; } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <a class="brand" href="https://www.thesithempire.eu/" aria-label="The Sith Empire">
+        <img src="assets/crest.png" alt="">
+        <span>THE SITH EMPIRE<small>JEDI ACADEMY</small></span>
+      </a>
+    </header>
+    <main>
+      <h1>{{S}} Launcher</h1>
+      <p class="subtitle">The Sith Empire launcher for Jedi Academy<br>Update, verify, and launch from one place.</p>
+      <figure style="margin:0">
+        <a class="screen" href="assets/launcher-preview.jpg" aria-label="View launcher screenshot">
+          <img src="assets/launcher-preview.jpg" alt="Screenshot of The Sith Empire Jedi Academy launcher">
+        </a>
+        <figcaption class="screenshot-caption">The Sith Empire launcher</figcaption>
+      </figure>
+      <a class="download" href="downloads/SLauncher.exe" download>Download Windows Launcher</a>
+      <p class="version">Windows v0.1.2 · Linux v0.1.0, 64-bit</p>
+      <section class="details" aria-labelledby="about-title">
+        <h2 id="about-title">The Sith Empire Launcher</h2>
+        <p>Keep JoF EternalJK up to date, verify your PK3 files, and start Jedi Academy with your chosen client. The Windows launcher follows the official Sith Cloud address automatically.</p>
+      </section>
+      <nav class="more" aria-label="Other downloads and information">
+        <a href="downloads/SLauncher-windows-x86_64-v0.1.2.zip" download>Windows ZIP ({{S}}Launcher.exe)</a>
+        <a href="downloads/SLauncher-linux-x86_64.tar.gz" download>Linux x86_64</a>
+        <a href="downloads/SHA256SUMS-v0.1.2.txt" download>SHA-256 checksums</a>
+        <a href="LICENSE">License</a>
+      </nav>
+      <p class="screenshot-caption">Jedi Academy and its original game files are not included.</p>
+    </main>
+    <footer><a href="https://www.thesithempire.eu/">The Sith Empire</a> · For the Empire. For the game.</footer>
+  </div>
+</body>
+</html>
